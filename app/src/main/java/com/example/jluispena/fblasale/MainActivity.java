@@ -27,4 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void OpenDonateActivity(View v){
         setContentView(R.layout.activity_donate);
     }
+    public void OpenMainActivity(View v){
+        setContentView(R.layout.activity_main);
+    }
 }
