@@ -1,6 +1,7 @@
 package com.example.jluispena.fblasale;
 
 import android.content.Intent;
+import android.graphics.Camera;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
