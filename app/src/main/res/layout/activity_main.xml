@@ -8,48 +8,64 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/fbla"
     tools:context="com.example.jluispena.fblasale.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
-        android:text="Buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buyButton"
-        android:onClick="OpenBuyActivity"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/textView"
+        android:text="@string/donate"
+        android:id="@+id/donateButton"
+        android:onClick="OpenDonateActivity"
+        android:layout_above="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp" />
 
     <Button
-        android:text="Sell"
+        android:text="@string/sell"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sellButton"
         android:onClick="OpenSellActivity"
-        android:layout_alignBaseline="@+id/buyButton"
-        android:layout_alignBottom="@+id/buyButton"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignBaseline="@+id/donateButton"
+        android:layout_alignBottom="@+id/donateButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyButton"
+        android:onClick="OpenBuyActivity"
+        android:layout_above="@+id/sellButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fbla"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:id="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/scrolling"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Donate"
-        android:id="@+id/donateButton"
-        android:onClick="OpenDonateActivity"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/buyButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+        android:text="@string/Buy"
+        android:id="@+id/scrolling"
+        android:onClick="OpenScrollingActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/buyButton"
+        android:layout_alignStart="@+id/buyButton" />
 </RelativeLayout>
