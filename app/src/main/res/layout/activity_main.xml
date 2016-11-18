@@ -33,10 +33,10 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="GiveUp"
+        android:text="Blank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/giveup"
+        android:id="@+id/blank"
         android:onClick="OpenMain2Activity"
         android:layout_above="@+id/sellButton"
         android:layout_centerHorizontal="true" />
@@ -66,6 +66,6 @@
         android:id="@+id/scrolling"
         android:onClick="OpenScrollingActivity"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/giveup"
-        android:layout_alignStart="@+id/giveup" />
+        android:layout_alignLeft="@+id/blank"
+        android:layout_alignStart="@+id/blank" />
 </RelativeLayout>
