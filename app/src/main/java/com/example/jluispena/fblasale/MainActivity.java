@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DonateActivity.class);
         startActivity(intent);
     }
-    public void BuyActivity(View v){
-       setContentView(R.layout.activity_buy);
+    //public void BuyActivity(View v){
+       //setContentView(R.layout.activity_buy);
 
-    }
+    //}
     public void OpenScrollingActivity(View v) {
         Intent intent = new Intent(this, ScrollingActivity.class);
         startActivity(intent);

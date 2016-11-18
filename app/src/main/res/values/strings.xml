@@ -29,7 +29,7 @@
         career development programs.
     </string>
     <string name="name">
-        Name
+        Item Name
     </string>
     <string name="Buy">
         Buy
@@ -43,6 +43,7 @@
     <string name="sell">
         Sell
     </string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
