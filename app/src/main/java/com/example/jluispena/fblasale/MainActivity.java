@@ -9,12 +9,13 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
         private static Button button;
         @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         }
-    public void OpenBuyActivity(View v){
-        Intent intent = new Intent(this, BuyActivity.class);
+    public void OpenRegisterActivity(View v){
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
     public void OpenSellActivity(View v){
@@ -25,11 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DonateActivity.class);
         startActivity(intent);
     }
-    //public void BuyActivity(View v){
-       //setContentView(R.layout.activity_buy);
-
-    //}
-    public void OpenScrollingActivity(View v) {
+    public void OpenScrollingActivity(View v){
         Intent intent = new Intent(this, ScrollingActivity.class);
         startActivity(intent);
     }
